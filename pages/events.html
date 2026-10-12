@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riverbend Yoga Studio | Events</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <header>
+    <img src="../media/images/yoga-logo_c.png" alt="Riverbend Yoga Studio logo with river wave" width="120">
+    <p>Riverbend Yoga Studio</p>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Classes</a></li>
+        <li><a href="events.html" aria-current="page">Events</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Workshops and Events</h1>
+
+    <section aria-labelledby="workshops-heading">
+      <h2 id="workshops-heading">Monthly Workshop List</h2>
+      <ul>
+        <li>October 12 - Beginner Basics Saturday, 10:00 AM</li>
+        <li>November 9 - Restorative for Better Sleep, 6:30 PM</li>
+        <li>December 14 - Gentle Yoga for Older Adults, 11:00 AM</li>
+      </ul>
+      <figure>
+        <img src="../media/images/yoga-workshop_c.png" alt="Small group doing seated stretches in workshop" width="600">
+        <figcaption>Monthly Beginner Basics workshop: Welcoming space to learn foundations.</figcaption>
+      </figure>
+    </section>
+
+    <section aria-labelledby="form-heading">
+      <h2 id="form-heading">Request a Spot</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Workshop Interest Form</legend>
+          <p><label for="name">Full Name:</label><br><input type="text" id="name" name="name" required minlength="2" autocomplete="name"></p>
+          <p class="error" id="name-error"></p>
+          <p><label for="email">Email:</label><br><input type="email" id="email" name="email" required autocomplete="email"></p>
+          <p class="error" id="email-error"></p>
+          <p><label for="interest">Class or Event Interest:</label><br>
+            <select id="interest" name="interest" required>
+              <option value="">Select an option</option>
+              <option value="beginner-basics">Basics Saturday</option>
+              <option value="restorative-sleep">Restorative for Better Sleep</option>
+              <option value="gentle-older-adults">Gentle Yoga for Older Adults</option>
+            </select>
+          </p>
+          <p>Experience Level:<br>
+            <input type="radio" id="exp-beginner" name="experience" value="beginner" required><label for="exp-beginner">Beginner</label><br>
+            <input type="radio" id="exp-intermediate" name="experience" value="intermediate"><label for="exp-intermediate">Intermediate</label><br>
+            <input type="radio" id="exp-advanced" name="experience" value="advanced"><label for="exp-advanced">Advanced</label><br>
+          </p>
+          <p><label for="message">Message:</label><br><textarea id="message" name="message" rows="5" required minlength="10"></textarea></p>
+          <p><button type="submit">Submit Request</button></p>
+          <p id="form-note"></p>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Riverbend Yoga Studio. All rights reserved.</p>
+  </footer>
+  <script src="../js/script.js"></script>
+</body>
+</html>

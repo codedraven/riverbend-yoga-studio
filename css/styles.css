@@ -1,0 +1,238 @@
+/* Riverbend colors - Calm */
+:root {
+  --cream: #FFF8F0; /* 60% PAGE background - soft white, low eye strain */
+  --river: #7790a0; /* 30% ACCENT only - borders, nav highlight, button */
+  --charcoal: #2F2A26; /* 10% TEXT - near-black, strong contrast on cream */
+}
+
+body {
+    background-color: var(--cream);
+    color: var(--charcoal);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2;
+    margin: 0;
+}
+
+header {
+    background-color: var(--cream);
+    border-bottom: 4px solid var(--river);
+    padding: 16px;
+    text-align: center;
+}
+
+header p {
+    font-family: Georgia, serif;
+    font-size: 1.4rem;
+    color: var(--charcoal);
+    margin: 8px 0;
+}
+
+video {
+    border-bottom: 4px solid var(--river);
+    padding: 36px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0 0;
+}
+
+nav a {
+    display: block;
+    color: var(--charcoal);
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid var(--river);
+    border-radius: 6px;
+    background-color: var(--cream);
+}
+
+nav a:hover {
+    background-color: var(--river);
+    color: var(--cream);
+}
+
+nav a[aria-current="page"] {
+    background-color: var(--river);
+    color: var(--charcoal);
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+h1 {
+    font-family: Georgia, serif;
+    font-size: 2.1rem;
+    color: var(--charcoal);
+    text-align: center;
+}
+
+h2 {
+    font-family: Georgia, serif;
+    font-size: 1.8rem;
+    color: var(--charcoal);
+    border-bottom: 2px solid var(--river);
+    padding-bottom: 4px;
+}
+
+section{
+    background-color: #ffffff;
+    border: 5px solid var(--river);
+    border-radius: 8px;
+    padding: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+section ul {
+    list-style: none;
+    padding-left: 20px;
+    margin: 8px 0;
+}
+
+section li {
+    margin-bottom: 4px;
+}
+
+
+img {
+    max-width: 97%;
+    height: auto;
+    border-radius: 6px;
+}
+
+figure{
+    margin: 12px 0;
+    padding: 8px;
+    border: 1px solid var(--river);
+    border-radius: 6px;
+    background-color: var(--cream);
+}
+
+figcaption{
+    font-size: 0.9rem;
+    color: var(--charcoal);
+    padding-top: 6px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 97%;
+    max-width: 480px;
+    padding: 10px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid var(--river);
+    border-radius: 6px;
+    background-color: var(--cream);
+    color: var(--charcoal);
+    box-sizing: border-box;
+    margin-right: 6px;
+}
+
+form input[type="radio"] {
+    width: auto;
+}
+
+form fieldset {
+    border: 2px solid var(--river);
+    border-radius: 6px;
+    background-color: #ffffff;
+}
+
+form legend {
+    font-family: Georgia, serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 0 8px;
+}
+
+button{
+    background-color: var(--river);
+    color: var(--charcoal);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: 1px solid var(--charcoal);
+    border-radius: 6px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    background-color: var(--cream);
+    border-top: 4px solid var(--river);
+    padding: 16px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: var(--charcoal);
+}
+
+@media (min-width: 700px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        padding: 12px 20px;
+    }
+
+    main {
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 2.3rem;
+    }
+
+    section {
+        padding: 24px;
+    }
+}
+
+#yoga-banner {
+    width: 97%;
+    height: 450px;
+    object-fit: cover;
+    display: block;
+}
+
+#class-result {
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid var(--river);
+    border-radius: 6px;
+    background-color: var(--cream);
+}
+
+#saved-pick {
+    font-size: 0.8rem;
+    color: var(--charcoal);
+}
+
+.error {
+    color: #B00020;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin: 4px 0;
+}
+
+#form-note {
+    font-weight: bold;
+}
